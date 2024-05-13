@@ -2,7 +2,7 @@ import { defineBuildConfig } from 'unbuild'
 import pkg from './package.json'
 
 export default defineBuildConfig({
-  entries: ['src/index'],
+  entries: ['src/index.ts', 'src/cli.ts'],
   declaration: true,
   clean: true,
   rollup: {

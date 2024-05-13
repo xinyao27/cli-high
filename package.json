@@ -26,6 +26,7 @@
   },
   "funding": "https://github.com/sponsors/xinyao27",
   "files": [
+    "bin/*",
     "dist/*",
     "package.json"
   ],
@@ -40,6 +41,9 @@
     }
   },
   "sideEffects": false,
+  "bin": {
+    "highlight": "./bin/index.js"
+  },
   "scripts": {
     "build": "unbuild",
     "stub": "unbuild --stub",
@@ -54,14 +58,17 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@clack/prompts": "^0.7.0",
     "picocolors": "^1.0.0",
-    "sugar-high": "^0.6.1"
+    "sugar-high": "^0.6.1",
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "@antfu/ni": "^0.21.12",
     "@commitlint/cli": "^19.3.0",
     "@release-it/conventional-changelog": "^8.0.1",
     "@types/bun": "^1.1.1",
+    "@types/yargs": "^17.0.32",
     "@xystack/style-guide": "^0.0.4",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
