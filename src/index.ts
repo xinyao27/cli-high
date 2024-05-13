@@ -1,5 +1,5 @@
 import { highlight as highlightAsHtml } from 'sugar-high'
-import * as c from 'picocolors'
+import { black, cyan, dim, green, magenta, red } from 'picocolors'
 
 export interface HighlightOptions {
   showLineNumbers?: boolean
@@ -15,38 +15,38 @@ export function highlight(code: string, options: HighlightOptions = { showLineNu
   // eslint-disable-next-line no-cond-assign
   while ((match = regex.exec(html)) !== null) {
     const innerMatches = [...match[1].matchAll(/<span class="([^"]+)" style="color: ([^"]+)">(.*?)<\/span>/gs)]
-    result += options.showLineNumbers ? `${c.dim(`${i}`.padEnd(2, ' '))} ` : ''
+    result += options.showLineNumbers ? `${dim(`${i}`.padEnd(2, ' '))} ` : ''
     innerMatches.forEach((innerMatch) => {
       const classType = innerMatch[1]
       const text = decode(innerMatch[3])
 
       switch (classType) {
         case 'sh__token--identifier':
-          result += c.black(text)
+          result += black(text)
           break
         case 'sh__token--keyword':
-          result += c.red(text)
+          result += red(text)
           break
         case 'sh__token--string':
-          result += c.green(text)
+          result += green(text)
           break
         case 'sh__token--class':
-          result += c.cyan(text)
+          result += cyan(text)
           break
         case 'sh__token--property':
-          result += c.cyan(text)
+          result += cyan(text)
           break
         case 'sh__token--entity':
-          result += c.magenta(text)
+          result += magenta(text)
           break
         case 'sh__token--jsxliterals':
-          result += c.green(text)
+          result += green(text)
           break
         case 'sh__token--sign':
-          result += c.dim(text)
+          result += dim(text)
           break
         case 'sh__token--comment':
-          result += c.dim(text)
+          result += dim(text)
           break
         default:
           result += text

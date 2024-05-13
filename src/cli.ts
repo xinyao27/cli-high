@@ -3,14 +3,14 @@ import fs from 'node:fs/promises'
 import process from 'node:process'
 import { hideBin } from 'yargs/helpers'
 import yargs from 'yargs'
-import * as p from '@clack/prompts'
-import c from 'picocolors'
+import { intro, log, note } from '@clack/prompts'
+import { dim, inverse, magenta, red } from 'picocolors'
 import pkgJson from '../package.json'
 import { highlight } from './index'
 
 function header() {
   console.log('\n')
-  p.intro(`✨ ${c.magenta(`${pkgJson.name} `)}${c.dim(`v${pkgJson.version}`)}`)
+  intro(`✨ ${magenta(`${pkgJson.name} `)}${dim(`v${pkgJson.version}`)}`)
 }
 
 const instance = yargs(hideBin(process.argv))
@@ -35,10 +35,10 @@ const instance = yargs(hideBin(process.argv))
         const filePath = path.join(process.cwd(), _[0].toString())
         const code = await fs.readFile(filePath, 'utf-8')
         const highlighted = highlight(code, { showLineNumbers })
-        p.note(highlighted)
+        note(highlighted)
       } catch (error) {
-        p.log.error(c.inverse(c.red(' Failed to read file')))
-        p.log.error(c.red(`✘ ${String(error)}`))
+        log.error(inverse(red(' Failed to read file')))
+        log.error(red(`✘ ${String(error)}`))
         process.exit(1)
       }
     },
