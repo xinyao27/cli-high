@@ -1,3 +1,8 @@
 import { all } from '@xystack/style-guide/eslint'
 
-export default all
+export default [
+  ...all,
+  {
+    ignores: ['example/*'],
+  },
+]
