@@ -10,7 +10,7 @@ export function highlight(code: string, options: HighlightOptions = { showLineNu
 
   let match
   let result = ''
-  let i = 0
+  let i = 1
 
   // eslint-disable-next-line no-cond-assign
   while ((match = regex.exec(html)) !== null) {
