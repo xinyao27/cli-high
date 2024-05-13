@@ -1,5 +1,5 @@
 import { highlight as highlightAsHtml } from 'sugar-high'
-import { black, cyan, dim, green, magenta, red } from 'yoctocolors'
+import { black, cyanBright, dim, greenBright, magentaBright, redBright } from 'yoctocolors'
 
 export interface HighlightOptions {
   showLineNumbers?: boolean
@@ -25,22 +25,22 @@ export function highlight(code: string, options: HighlightOptions = { showLineNu
           result += black(text)
           break
         case 'sh__token--keyword':
-          result += red(text)
+          result += redBright(text)
           break
         case 'sh__token--string':
-          result += green(text)
+          result += greenBright(text)
           break
         case 'sh__token--class':
-          result += cyan(text)
+          result += cyanBright(text)
           break
         case 'sh__token--property':
-          result += cyan(text)
+          result += cyanBright(text)
           break
         case 'sh__token--entity':
-          result += magenta(text)
+          result += magentaBright(text)
           break
         case 'sh__token--jsxliterals':
-          result += green(text)
+          result += greenBright(text)
           break
         case 'sh__token--sign':
           result += dim(text)

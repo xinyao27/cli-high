@@ -5,73 +5,177 @@ exports[`should work class 1`] = `
 [2m * @param {string} names[22m
 [2m * @return {Promise<string[]>}[22m
 [2m */[22m
-[31masync[39m [31mfunction[39m [30mnotify[39m[2m([22m[30mnames[39m[2m)[22m [2m{[22m
-  [31mconst[39m [30mtags[39m [2m=[22m [2m[[22m[2m][22m
-  [31mfor[39m [2m([22m[31mconst[39m [30mname_[39m [30mof[39m [30mnames[39m[2m)[22m [2m{[22m
-    [30mtags[39m[2m.[22m[36mpush[39m[2m([22m[32m\`[39m[32m@[39m[2m${[22m[30mname_[39m[2m}[22m[32m\`[39m[2m)[22m
+[91masync[39m [91mfunction[39m [30mnotify[39m[2m([22m[30mnames[39m[2m)[22m [2m{[22m
+  [91mconst[39m [30mtags[39m [2m=[22m [2m[[22m[2m][22m
+  [91mfor[39m [2m([22m[91mconst[39m [30mname_[39m [30mof[39m [30mnames[39m[2m)[22m [2m{[22m
+    [30mtags[39m[2m.[22m[96mpush[39m[2m([22m[92m\`[39m[92m@[39m[2m${[22m[30mname_[39m[2m}[22m[92m\`[39m[2m)[22m
   [2m}[22m
-  [31mawait[39m [30mping[39m[2m([22m[30mtags[39m[2m)[22m
+  [91mawait[39m [30mping[39m[2m([22m[30mtags[39m[2m)[22m
 [2m}[22m
-[31mclass[39m [36mSuperArray[39m [31mextends[39m [36mArray[39m [2m{[22m
-  [31mstatic[39m [30mcore[39m [2m=[22m [36mObject[39m[2m.[22m[36mcreate[39m[2m([22m[36mnull[39m[2m)[22m
+[91mclass[39m [96mSuperArray[39m [91mextends[39m [96mArray[39m [2m{[22m
+  [91mstatic[39m [30mcore[39m [2m=[22m [96mObject[39m[2m.[22m[96mcreate[39m[2m([22m[96mnull[39m[2m)[22m
   [30mconstructor[39m[2m([22m[2m.[22m[2m.[22m[2m.[22m[30margs[39m[2m)[22m [2m{[22m
-    [31msuper[39m[2m([22m[2m.[22m[2m.[22m[2m.[22m[30margs[39m[2m)[22m
+    [91msuper[39m[2m([22m[2m.[22m[2m.[22m[2m.[22m[30margs[39m[2m)[22m
   [2m}[22m
 
   [30mbump[39m[2m([22m[30mvalue[39m[2m)[22m [2m{[22m
-    [31mreturn[39m [31mthis[39m[2m.[22m[36mmap[39m[2m([22m[2m([22m[30mx[39m[2m)[22m [2m=[22m[2m>[22m [2m([22m[30mx[39m [2m=[22m[2m=[22m [31mundefined[39m [2m?[22m [30mx[39m [2m+[22m [36m1[39m [2m:[22m [36m0[39m[2m)[22m[2m)[22m[2m.[22m[30mconcat[39m[2m([22m[30mvalue[39m[2m)[22m
+    [91mreturn[39m [91mthis[39m[2m.[22m[96mmap[39m[2m([22m[2m([22m[30mx[39m[2m)[22m [2m=[22m[2m>[22m [2m([22m[30mx[39m [2m=[22m[2m=[22m [91mundefined[39m [2m?[22m [30mx[39m [2m+[22m [96m1[39m [2m:[22m [96m0[39m[2m)[22m[2m)[22m[2m.[22m[30mconcat[39m[2m([22m[30mvalue[39m[2m)[22m
   [2m}[22m
 [2m}[22m
 "
 `;
 
 exports[`should work regex 1`] = `
-"[31mexport[39m [31mconst[39m [30mtest[39m [2m=[22m [2m([22m[30mstr[39m[2m)[22m [2m=[22m[2m>[22m [32m/^\/[0-5]\/$/g[39m[2m.[22m[30mtest[39m[2m([22m[30mstr[39m[2m)[22m
+"[91mexport[39m [91mconst[39m [30mtest[39m [2m=[22m [2m([22m[30mstr[39m[2m)[22m [2m=[22m[2m>[22m [92m/^\/[0-5]\/$/g[39m[2m.[22m[30mtest[39m[2m([22m[30mstr[39m[2m)[22m
 [2m// This is a super lightweight javascript syntax highlighter npm package[22m
 [2m[22m[2m// This is a inline comment / <- a slash[22m
 [2m[22m[2m/// <reference path="...&quot; /> // reference comment[22m
-[2m[22m[2m/* This is another comment */[22m [30malert[39m[2m([22m[32m'[39m[32mgood[39m[32m'[39m[2m)[22m [2m// <- alerts[22m
+[2m[22m[2m/* This is another comment */[22m [30malert[39m[2m([22m[92m'[39m[92mgood[39m[92m'[39m[2m)[22m [2m// <- alerts[22m
 [2m[22m[2m// Invalid calculation: regex and numbers[22m
-[2m[22m[31mconst[39m [36m_in[39m [2m=[22m [36m123[39m [2m-[22m [32m/555/[39m [2m+[22m [36m444[39m
-[31mconst[39m [36m_iu[39m [2m=[22m [2m/* evaluate */[22m [36m19[39m [2m/[22m [36m234[39m [2m+[22m [36m56[39m [2m/[22m [36m7[39m
+[2m[22m[91mconst[39m [96m_in[39m [2m=[22m [96m123[39m [2m-[22m [92m/555/[39m [2m+[22m [96m444[39m
+[91mconst[39m [96m_iu[39m [2m=[22m [2m/* evaluate */[22m [96m19[39m [2m/[22m [96m234[39m [2m+[22m [96m56[39m [2m/[22m [96m7[39m
 "
 `;
 
 exports[`should work jsx 1`] = `
-"[31mconst[39m [30melement[39m [2m=[22m [2m([22m
+"[91mconst[39m [30melement[39m [2m=[22m [2m([22m
   [2m<[22m[2m>[22m
-    [2m<[22m[35mFood[39m
-      [36mseason[39m[2m=[22m[2m{[22m[2m{[22m
-        [30msault[39m[2m:[22m [2m<[22m[35mp[39m [36ma[39m[2m=[22m[2m{[22m[2m[[22m[2m{[22m[2m}[22m[2m][22m[2m}[22m [2m/>[22m[2m,[22m
+    [2m<[22m[95mFood[39m
+      [96mseason[39m[2m=[22m[2m{[22m[2m{[22m
+        [30msault[39m[2m:[22m [2m<[22m[95mp[39m [96ma[39m[2m=[22m[2m{[22m[2m[[22m[2m{[22m[2m}[22m[2m][22m[2m}[22m [2m/>[22m[2m,[22m
       [2m}[22m[2m}[22m
     [2m/[22m[2m>[22m
     [2m{[22m[2m/* jsx comment */[22m[2m}[22m
-    [2m<[22m[35mh1[39m [36mclassName[39m[2m=[22m[32m"[39m[32mtitle[39m[32m"[39m [36mdata-[39m[36mtitle[39m[2m=[22m[32m"[39m[32mtrue[39m[32m"[39m[2m>[22m[32m[39m
-[32m[39m[32m      Read[39m[2m{[22m[32m'[39m[32m [39m[32m'[39m[2m}[22m[32m[39m
-[32m[39m[32m      [39m[2m<[22m[35mLink[39m [36mhref[39m[2m=[22m[32m"[39m[32m/posts/first-post[39m[32m"[39m[2m>[22m[32m[39m
-[32m[39m[32m        [39m[2m<[22m[35ma[39m[2m>[22m[32mthis page! - [39m[2m{[22m[36mDate[39m[2m.[22m[36mnow[39m[2m([22m[2m)[22m[2m}[22m[2m</[22m[35ma[39m[2m>[22m
-      [2m</[22m[35mLink[39m[2m>[22m
-    [2m</[22m[35mh1[39m[2m>[22m
+    [2m<[22m[95mh1[39m [96mclassName[39m[2m=[22m[92m"[39m[92mtitle[39m[92m"[39m [96mdata-[39m[96mtitle[39m[2m=[22m[92m"[39m[92mtrue[39m[92m"[39m[2m>[22m[92m[39m
+[92m[39m[92m      Read[39m[2m{[22m[92m'[39m[92m [39m[92m'[39m[2m}[22m[92m[39m
+[92m[39m[92m      [39m[2m<[22m[95mLink[39m [96mhref[39m[2m=[22m[92m"[39m[92m/posts/first-post[39m[92m"[39m[2m>[22m[92m[39m
+[92m[39m[92m        [39m[2m<[22m[95ma[39m[2m>[22m[92mthis page! - [39m[2m{[22m[96mDate[39m[2m.[22m[96mnow[39m[2m([22m[2m)[22m[2m}[22m[2m</[22m[95ma[39m[2m>[22m
+      [2m</[22m[95mLink[39m[2m>[22m
+    [2m</[22m[95mh1[39m[2m>[22m
   [2m</[22m[2m>[22m
 [2m)[22m
 "
 `;
 
 exports[`should work jsx with line numbers 1`] = `
-"[2m1 [22m [31mconst[39m [30melement[39m [2m=[22m [2m([22m
+"[2m1 [22m [91mconst[39m [30melement[39m [2m=[22m [2m([22m
 [2m2 [22m   [2m<[22m[2m>[22m
-[2m3 [22m     [2m<[22m[35mFood[39m
-[2m4 [22m       [36mseason[39m[2m=[22m[2m{[22m[2m{[22m
-[2m5 [22m         [30msault[39m[2m:[22m [2m<[22m[35mp[39m [36ma[39m[2m=[22m[2m{[22m[2m[[22m[2m{[22m[2m}[22m[2m][22m[2m}[22m [2m/>[22m[2m,[22m
+[2m3 [22m     [2m<[22m[95mFood[39m
+[2m4 [22m       [96mseason[39m[2m=[22m[2m{[22m[2m{[22m
+[2m5 [22m         [30msault[39m[2m:[22m [2m<[22m[95mp[39m [96ma[39m[2m=[22m[2m{[22m[2m[[22m[2m{[22m[2m}[22m[2m][22m[2m}[22m [2m/>[22m[2m,[22m
 [2m6 [22m       [2m}[22m[2m}[22m
 [2m7 [22m     [2m/[22m[2m>[22m
 [2m8 [22m     [2m{[22m[2m/* jsx comment */[22m[2m}[22m
-[2m9 [22m     [2m<[22m[35mh1[39m [36mclassName[39m[2m=[22m[32m"[39m[32mtitle[39m[32m"[39m [36mdata-[39m[36mtitle[39m[2m=[22m[32m"[39m[32mtrue[39m[32m"[39m[2m>[22m[32m[39m
-[2m10[22m [32m[39m[32m      Read[39m[2m{[22m[32m'[39m[32m [39m[32m'[39m[2m}[22m[32m[39m
-[2m11[22m [32m[39m[32m      [39m[2m<[22m[35mLink[39m [36mhref[39m[2m=[22m[32m"[39m[32m/posts/first-post[39m[32m"[39m[2m>[22m[32m[39m
-[2m12[22m [32m[39m[32m        [39m[2m<[22m[35ma[39m[2m>[22m[32mthis page! - [39m[2m{[22m[36mDate[39m[2m.[22m[36mnow[39m[2m([22m[2m)[22m[2m}[22m[2m</[22m[35ma[39m[2m>[22m
-[2m13[22m       [2m</[22m[35mLink[39m[2m>[22m
-[2m14[22m     [2m</[22m[35mh1[39m[2m>[22m
+[2m9 [22m     [2m<[22m[95mh1[39m [96mclassName[39m[2m=[22m[92m"[39m[92mtitle[39m[92m"[39m [96mdata-[39m[96mtitle[39m[2m=[22m[92m"[39m[92mtrue[39m[92m"[39m[2m>[22m[92m[39m
+[2m10[22m [92m[39m[92m      Read[39m[2m{[22m[92m'[39m[92m [39m[92m'[39m[2m}[22m[92m[39m
+[2m11[22m [92m[39m[92m      [39m[2m<[22m[95mLink[39m [96mhref[39m[2m=[22m[92m"[39m[92m/posts/first-post[39m[92m"[39m[2m>[22m[92m[39m
+[2m12[22m [92m[39m[92m        [39m[2m<[22m[95ma[39m[2m>[22m[92mthis page! - [39m[2m{[22m[96mDate[39m[2m.[22m[96mnow[39m[2m([22m[2m)[22m[2m}[22m[2m</[22m[95ma[39m[2m>[22m
+[2m13[22m       [2m</[22m[95mLink[39m[2m>[22m
+[2m14[22m     [2m</[22m[95mh1[39m[2m>[22m
+[2m15[22m   [2m</[22m[2m>[22m
+[2m16[22m [2m)[22m
+"
+`;
+
+exports[`should work regex 1`] = `
+"[91mexport[39m [91mconst[39m [30mtest[39m [2m=[22m [2m([22m[30mstr[39m[2m)[22m [2m=[22m[2m>[22m [92m/^\/[0-5]\/$/g[39m[2m.[22m[30mtest[39m[2m([22m[30mstr[39m[2m)[22m
+[2m// This is a super lightweight javascript syntax highlighter npm package[22m
+[2m[22m[2m// This is a inline comment / <- a slash[22m
+[2m[22m[2m/// <reference path="...&quot; /> // reference comment[22m
+[2m[22m[2m/* This is another comment */[22m [30malert[39m[2m([22m[92m'[39m[92mgood[39m[92m'[39m[2m)[22m [2m// <- alerts[22m
+[2m[22m[2m// Invalid calculation: regex and numbers[22m
+[2m[22m[91mconst[39m [96m_in[39m [2m=[22m [96m123[39m [2m-[22m [92m/555/[39m [2m+[22m [96m444[39m
+[91mconst[39m [96m_iu[39m [2m=[22m [2m/* evaluate */[22m [96m19[39m [2m/[22m [96m234[39m [2m+[22m [96m56[39m [2m/[22m [96m7[39m
+"
+`;
+
+exports[`should work jsx 1`] = `
+"[91mconst[39m [30melement[39m [2m=[22m [2m([22m
+  [2m<[22m[2m>[22m
+    [2m<[22m[95mFood[39m
+      [96mseason[39m[2m=[22m[2m{[22m[2m{[22m
+        [30msault[39m[2m:[22m [2m<[22m[95mp[39m [96ma[39m[2m=[22m[2m{[22m[2m[[22m[2m{[22m[2m}[22m[2m][22m[2m}[22m [2m/>[22m[2m,[22m
+      [2m}[22m[2m}[22m
+    [2m/[22m[2m>[22m
+    [2m{[22m[2m/* jsx comment */[22m[2m}[22m
+    [2m<[22m[95mh1[39m [96mclassName[39m[2m=[22m[92m"[39m[92mtitle[39m[92m"[39m [96mdata-[39m[96mtitle[39m[2m=[22m[92m"[39m[92mtrue[39m[92m"[39m[2m>[22m[92m[39m
+[92m[39m[92m      Read[39m[2m{[22m[92m'[39m[92m [39m[92m'[39m[2m}[22m[92m[39m
+[92m[39m[92m      [39m[2m<[22m[95mLink[39m [96mhref[39m[2m=[22m[92m"[39m[92m/posts/first-post[39m[92m"[39m[2m>[22m[92m[39m
+[92m[39m[92m        [39m[2m<[22m[95ma[39m[2m>[22m[92mthis page! - [39m[2m{[22m[96mDate[39m[2m.[22m[96mnow[39m[2m([22m[2m)[22m[2m}[22m[2m</[22m[95ma[39m[2m>[22m
+      [2m</[22m[95mLink[39m[2m>[22m
+    [2m</[22m[95mh1[39m[2m>[22m
+  [2m</[22m[2m>[22m
+[2m)[22m
+"
+`;
+
+exports[`should work jsx with line numbers 1`] = `
+"[2m1 [22m [91mconst[39m [30melement[39m [2m=[22m [2m([22m
+[2m2 [22m   [2m<[22m[2m>[22m
+[2m3 [22m     [2m<[22m[95mFood[39m
+[2m4 [22m       [96mseason[39m[2m=[22m[2m{[22m[2m{[22m
+[2m5 [22m         [30msault[39m[2m:[22m [2m<[22m[95mp[39m [96ma[39m[2m=[22m[2m{[22m[2m[[22m[2m{[22m[2m}[22m[2m][22m[2m}[22m [2m/>[22m[2m,[22m
+[2m6 [22m       [2m}[22m[2m}[22m
+[2m7 [22m     [2m/[22m[2m>[22m
+[2m8 [22m     [2m{[22m[2m/* jsx comment */[22m[2m}[22m
+[2m9 [22m     [2m<[22m[95mh1[39m [96mclassName[39m[2m=[22m[92m"[39m[92mtitle[39m[92m"[39m [96mdata-[39m[96mtitle[39m[2m=[22m[92m"[39m[92mtrue[39m[92m"[39m[2m>[22m[92m[39m
+[2m10[22m [92m[39m[92m      Read[39m[2m{[22m[92m'[39m[92m [39m[92m'[39m[2m}[22m[92m[39m
+[2m11[22m [92m[39m[92m      [39m[2m<[22m[95mLink[39m [96mhref[39m[2m=[22m[92m"[39m[92m/posts/first-post[39m[92m"[39m[2m>[22m[92m[39m
+[2m12[22m [92m[39m[92m        [39m[2m<[22m[95ma[39m[2m>[22m[92mthis page! - [39m[2m{[22m[96mDate[39m[2m.[22m[96mnow[39m[2m([22m[2m)[22m[2m}[22m[2m</[22m[95ma[39m[2m>[22m
+[2m13[22m       [2m</[22m[95mLink[39m[2m>[22m
+[2m14[22m     [2m</[22m[95mh1[39m[2m>[22m
+[2m15[22m   [2m</[22m[2m>[22m
+[2m16[22m [2m)[22m
+"
+`;
+
+exports[`should work regex 1`] = `
+"[91mexport[39m [91mconst[39m [30mtest[39m [2m=[22m [2m([22m[30mstr[39m[2m)[22m [2m=[22m[2m>[22m [92m/^\/[0-5]\/$/g[39m[2m.[22m[30mtest[39m[2m([22m[30mstr[39m[2m)[22m
+[2m// This is a super lightweight javascript syntax highlighter npm package[22m
+[2m[22m[2m// This is a inline comment / <- a slash[22m
+[2m[22m[2m/// <reference path="...&quot; /> // reference comment[22m
+[2m[22m[2m/* This is another comment */[22m [30malert[39m[2m([22m[92m'[39m[92mgood[39m[92m'[39m[2m)[22m [2m// <- alerts[22m
+[2m[22m[2m// Invalid calculation: regex and numbers[22m
+[2m[22m[91mconst[39m [96m_in[39m [2m=[22m [96m123[39m [2m-[22m [92m/555/[39m [2m+[22m [96m444[39m
+[91mconst[39m [96m_iu[39m [2m=[22m [2m/* evaluate */[22m [96m19[39m [2m/[22m [96m234[39m [2m+[22m [96m56[39m [2m/[22m [96m7[39m
+"
+`;
+
+exports[`should work jsx 1`] = `
+"[91mconst[39m [30melement[39m [2m=[22m [2m([22m
+  [2m<[22m[2m>[22m
+    [2m<[22m[95mFood[39m
+      [96mseason[39m[2m=[22m[2m{[22m[2m{[22m
+        [30msault[39m[2m:[22m [2m<[22m[95mp[39m [96ma[39m[2m=[22m[2m{[22m[2m[[22m[2m{[22m[2m}[22m[2m][22m[2m}[22m [2m/>[22m[2m,[22m
+      [2m}[22m[2m}[22m
+    [2m/[22m[2m>[22m
+    [2m{[22m[2m/* jsx comment */[22m[2m}[22m
+    [2m<[22m[95mh1[39m [96mclassName[39m[2m=[22m[92m"[39m[92mtitle[39m[92m"[39m [96mdata-[39m[96mtitle[39m[2m=[22m[92m"[39m[92mtrue[39m[92m"[39m[2m>[22m[92m[39m
+[92m[39m[92m      Read[39m[2m{[22m[92m'[39m[92m [39m[92m'[39m[2m}[22m[92m[39m
+[92m[39m[92m      [39m[2m<[22m[95mLink[39m [96mhref[39m[2m=[22m[92m"[39m[92m/posts/first-post[39m[92m"[39m[2m>[22m[92m[39m
+[92m[39m[92m        [39m[2m<[22m[95ma[39m[2m>[22m[92mthis page! - [39m[2m{[22m[96mDate[39m[2m.[22m[96mnow[39m[2m([22m[2m)[22m[2m}[22m[2m</[22m[95ma[39m[2m>[22m
+      [2m</[22m[95mLink[39m[2m>[22m
+    [2m</[22m[95mh1[39m[2m>[22m
+  [2m</[22m[2m>[22m
+[2m)[22m
+"
+`;
+
+exports[`should work jsx with line numbers 1`] = `
+"[2m1 [22m [91mconst[39m [30melement[39m [2m=[22m [2m([22m
+[2m2 [22m   [2m<[22m[2m>[22m
+[2m3 [22m     [2m<[22m[95mFood[39m
+[2m4 [22m       [96mseason[39m[2m=[22m[2m{[22m[2m{[22m
+[2m5 [22m         [30msault[39m[2m:[22m [2m<[22m[95mp[39m [96ma[39m[2m=[22m[2m{[22m[2m[[22m[2m{[22m[2m}[22m[2m][22m[2m}[22m [2m/>[22m[2m,[22m
+[2m6 [22m       [2m}[22m[2m}[22m
+[2m7 [22m     [2m/[22m[2m>[22m
+[2m8 [22m     [2m{[22m[2m/* jsx comment */[22m[2m}[22m
+[2m9 [22m     [2m<[22m[95mh1[39m [96mclassName[39m[2m=[22m[92m"[39m[92mtitle[39m[92m"[39m [96mdata-[39m[96mtitle[39m[2m=[22m[92m"[39m[92mtrue[39m[92m"[39m[2m>[22m[92m[39m
+[2m10[22m [92m[39m[92m      Read[39m[2m{[22m[92m'[39m[92m [39m[92m'[39m[2m}[22m[92m[39m
+[2m11[22m [92m[39m[92m      [39m[2m<[22m[95mLink[39m [96mhref[39m[2m=[22m[92m"[39m[92m/posts/first-post[39m[92m"[39m[2m>[22m[92m[39m
+[2m12[22m [92m[39m[92m        [39m[2m<[22m[95ma[39m[2m>[22m[92mthis page! - [39m[2m{[22m[96mDate[39m[2m.[22m[96mnow[39m[2m([22m[2m)[22m[2m}[22m[2m</[22m[95ma[39m[2m>[22m
+[2m13[22m       [2m</[22m[95mLink[39m[2m>[22m
+[2m14[22m     [2m</[22m[95mh1[39m[2m>[22m
 [2m15[22m   [2m</[22m[2m>[22m
 [2m16[22m [2m)[22m
 "
