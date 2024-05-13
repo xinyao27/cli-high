@@ -1,5 +1,12 @@
 
 
+# [0.3.0](https://github.com/xinyao27/cli-high/compare/0.2.0...0.3.0) (2024-05-13)
+
+
+### Features
+
+* use yoctocolors ([c9bc34c](https://github.com/xinyao27/cli-high/commit/c9bc34c643dfe3d56f6df535cef705573cbd7fba))
+
 # [0.2.0](https://github.com/xinyao27/cli-high/compare/0.1.1...0.2.0) (2024-05-13)
 
 
