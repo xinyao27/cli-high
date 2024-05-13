@@ -1,5 +1,5 @@
 import { highlight as highlightAsHtml } from 'sugar-high'
-import { black, cyan, dim, green, magenta, red } from 'picocolors'
+import { black, cyan, dim, green, magenta, red } from 'yoctocolors'
 
 export interface HighlightOptions {
   showLineNumbers?: boolean

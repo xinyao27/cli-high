@@ -4,7 +4,7 @@ import process from 'node:process'
 import { hideBin } from 'yargs/helpers'
 import yargs from 'yargs'
 import { intro, log, note } from '@clack/prompts'
-import { dim, inverse, magenta, red } from 'picocolors'
+import { dim, inverse, magenta, red } from 'yoctocolors'
 import pkgJson from '../package.json'
 import { highlight } from './index'
 
