@@ -1,5 +1,12 @@
 
 
+# [0.2.0](https://github.com/xinyao27/cli-high/compare/0.1.1...0.2.0) (2024-05-13)
+
+
+### Features
+
+* preview cli ([bdd61a6](https://github.com/xinyao27/cli-high/commit/bdd61a62ce53d19e2d286d264886c2c8899ce830))
+
 ## [0.1.1](https://github.com/xinyao27/cli-high/compare/0.1.0...0.1.1) (2024-05-13)
 
 
