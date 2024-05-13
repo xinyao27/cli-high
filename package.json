@@ -1,0 +1,78 @@
+{
+  "name": "cli-high",
+  "version": "0.0.0",
+  "description": "tiny cli highlighter",
+  "type": "module",
+  "keywords": [
+    "cli",
+    "highlighter",
+    "highlight",
+    "color",
+    "terminal",
+    "console"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/xinyao27/cli-high#readme",
+  "bugs": {
+    "url": "https://github.com/xinyao27/cli-high/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xinyao27/cli-high.git"
+  },
+  "author": {
+    "name": "xinyao",
+    "email": "hi@xinyao.me"
+  },
+  "funding": "https://github.com/sponsors/xinyao27",
+  "files": [
+    "dist/*",
+    "package.json"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "typecheck": "tsc --noEmit",
+    "lint": "nr typecheck && eslint . --fix",
+    "prepublishOnly": "nr build",
+    "release": "release-it",
+    "start": "bun run src/index.ts",
+    "test": "bun test",
+    "preinstall": "npx only-allow bun",
+    "up": "taze major -I",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "picocolors": "^1.0.0",
+    "sugar-high": "^0.6.1"
+  },
+  "devDependencies": {
+    "@antfu/ni": "^0.21.12",
+    "@commitlint/cli": "^19.3.0",
+    "@release-it/conventional-changelog": "^8.0.1",
+    "@types/bun": "^1.1.1",
+    "@xystack/style-guide": "^0.0.4",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.2.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "release-it": "^17.2.1",
+    "taze": "^0.13.8",
+    "typescript": "^5.4.5",
+    "unbuild": "^2.0.0"
+  },
+  "prettier": "@xystack/style-guide/prettier"
+}
