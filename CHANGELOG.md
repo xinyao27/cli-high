@@ -1,5 +1,7 @@
 
 
+## [0.4.1](https://github.com/xinyao27/cli-high/compare/0.4.0...0.4.1) (2024-05-17)
+
 # [0.4.0](https://github.com/xinyao27/cli-high/compare/0.3.1...0.4.0) (2024-05-17)
 
 
