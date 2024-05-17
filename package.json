@@ -58,8 +58,8 @@
   "dependencies": {
     "@clack/prompts": "^0.7.0",
     "sugar-high": "^0.6.1",
-    "yargs": "^17.7.2",
-    "yoctocolors": "^2.0.0"
+    "xycolors": "^0.1.1",
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "@antfu/ni": "^0.21.12",

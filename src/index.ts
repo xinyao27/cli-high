@@ -1,5 +1,13 @@
 import { tokenize } from 'sugar-high'
-import { black, cyanBright, dim, greenBright, magentaBright, redBright } from 'yoctocolors'
+import {
+  blackStylize,
+  dim,
+  grayStylize,
+  magentaStylize,
+  pinkStylize,
+  whiteSecondaryStylize,
+  yellowStylize,
+} from 'xycolors'
 
 export interface HighlightOptions {
   showLineNumbers?: boolean
@@ -22,19 +30,19 @@ export function highlight(code: string, options: HighlightOptions = { showLineNu
           .map(([type, value]) => {
             switch (type) {
               case 0: // identifier
-                return black(value)
+                return blackStylize(value)
               case 1: // keyword
-                return redBright(value)
+                return whiteSecondaryStylize(value)
               case 2: // string
-                return greenBright(value)
+                return grayStylize(value)
               case 3: // Class, number and null
-                return cyanBright(value)
+                return yellowStylize(value)
               case 4: // property
-                return cyanBright(value)
+                return pinkStylize(value)
               case 5: // entity
-                return magentaBright(value)
+                return magentaStylize(value)
               case 6: // jsx literals
-                return greenBright(value)
+                return whiteSecondaryStylize(value)
               case 7: // sign
                 return dim(value)
               case 8: // comment

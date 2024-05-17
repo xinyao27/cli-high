@@ -4,13 +4,13 @@ import process from 'node:process'
 import { hideBin } from 'yargs/helpers'
 import yargs from 'yargs'
 import { intro, log, note } from '@clack/prompts'
-import { dim, inverse, magenta, red } from 'yoctocolors'
+import { dim, inverse, magentaStylize, redStylize } from 'xycolors'
 import pkgJson from '../package.json'
 import { highlight } from './index'
 
 function header() {
   console.log('\n')
-  intro(`✨ ${magenta(`${pkgJson.name} `)}${dim(`v${pkgJson.version}`)}`)
+  intro(`✨ ${magentaStylize(`${pkgJson.name} `)}${dim(`v${pkgJson.version}`)}`)
 }
 
 const instance = yargs(hideBin(process.argv))
@@ -37,8 +37,8 @@ const instance = yargs(hideBin(process.argv))
         const highlighted = highlight(code, { showLineNumbers })
         note(highlighted)
       } catch (error) {
-        log.error(inverse(red(' Failed to read file')))
-        log.error(red(`✘ ${String(error)}`))
+        log.error(inverse(redStylize(' Failed to read file')))
+        log.error(redStylize(`✘ ${String(error)}`))
         process.exit(1)
       }
     },
