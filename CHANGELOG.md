@@ -1,5 +1,13 @@
 
 
+# [0.4.0](https://github.com/xinyao27/cli-high/compare/0.3.1...0.4.0) (2024-05-17)
+
+
+### Features
+
+* higher performance ([4038ef9](https://github.com/xinyao27/cli-high/commit/4038ef99f0f588976d125689a87403bcc20145d0))
+* update color schema ([8f7e459](https://github.com/xinyao27/cli-high/commit/8f7e45972e41c139c5decbfddb9d96e51bef2620))
+
 ## [0.3.1](https://github.com/xinyao27/cli-high/compare/0.3.0...0.3.1) (2024-05-13)
 
 # [0.3.0](https://github.com/xinyao27/cli-high/compare/0.2.0...0.3.0) (2024-05-13)
