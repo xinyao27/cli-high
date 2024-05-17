@@ -1,13 +1,5 @@
 import { tokenize } from 'sugar-high'
-import {
-  blackStylize,
-  dim,
-  grayStylize,
-  magentaStylize,
-  pinkStylize,
-  whiteSecondaryStylize,
-  yellowStylize,
-} from 'xycolors'
+import { dim, grayStylize, magentaStylize, pinkStylize, whiteSecondaryStylize, yellowStylize } from 'xycolors'
 
 export interface HighlightOptions {
   showLineNumbers?: boolean
@@ -30,9 +22,9 @@ export function highlight(code: string, options: HighlightOptions = { showLineNu
           .map(([type, value]) => {
             switch (type) {
               case 0: // identifier
-                return blackStylize(value)
+                return pinkStylize(value)
               case 1: // keyword
-                return whiteSecondaryStylize(value)
+                return grayStylize(value)
               case 2: // string
                 return grayStylize(value)
               case 3: // Class, number and null
@@ -44,7 +36,7 @@ export function highlight(code: string, options: HighlightOptions = { showLineNu
               case 6: // jsx literals
                 return whiteSecondaryStylize(value)
               case 7: // sign
-                return dim(value)
+                return grayStylize(value)
               case 8: // comment
                 return dim(value)
               default:
